@@ -1,0 +1,31 @@
+:root {
+    --purple: #8a4f7d;
+    --gray: #887880;
+    --blue: #88a096;
+    --text: #fcfcfc;
+}
+
+ .custom-body {
+    background-color: #212121;
+    color: var(--text);
+}
+
+.custom-body h1 {
+    border: 2px solid var(--purple);
+    padding-block: .5rem;
+    padding-inline: 2rem;
+    border-radius: .5rem;
+}
+
+.boardfoot-calculate {
+    background-color: var(--gray);
+    color: var(--text);
+    border-radius: .5rem;
+    box-shadow: inset 0px 0px 5px 3px hsl(0, 0%, 75%);
+}
+
+.custom-btn {
+    background-color: var(--purple);
+    color: var(--text);
+    box-shadow: inset 0px 0px 3px hsl(0, 0%, 75%);
+}
