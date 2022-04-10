@@ -470,42 +470,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.col-span-3{
+  grid-column: span 3 / span 3;
+}
+
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
+.m-8{
+  margin: 2rem;
+}
+
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.my-3{
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.my-2{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.my-1{
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .mb-4{
@@ -516,8 +500,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.w-52{
-  width: 13rem;
+.grid{
+  display: grid;
+}
+
+.h-48{
+  height: 12rem;
+}
+
+.w-24{
+  width: 6rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-48{
+  width: 12rem;
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -532,20 +540,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
 .rounded-xl{
   border-radius: 0.75rem;
 }
 
 .rounded-full{
   border-radius: 9999px;
-}
-
-.border-4{
-  border-width: 4px;
 }
 
 .border-2{
@@ -567,11 +567,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(136 120 128 / var(--tw-bg-opacity));
 }
 
-.bg-customBlue{
-  --tw-bg-opacity: 1;
-  background-color: rgb(136 160 150 / var(--tw-bg-opacity));
-}
-
 .bg-customPurple{
   --tw-bg-opacity: 1;
   background-color: rgb(138 79 125 / var(--tw-bg-opacity));
@@ -585,19 +580,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.75rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .px-4{
@@ -613,21 +598,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Comfortaa;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -635,11 +605,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-bold{
   font-weight: 700;
-}
-
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-customWhite{
@@ -671,10 +636,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.duration-500{
-  transition-duration: 500ms;
-}
-
 .duration-300{
   transition-duration: 300ms;
 }
@@ -683,7 +644,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:rounded-xl:hover{
+  border-radius: 0.75rem;
+}
+
 .hover\:shadow-customWhite:hover{
   --tw-shadow-color: #fcfcfc;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+@media (min-width: 768px){
+  .md\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
